@@ -1,11 +1,16 @@
 import { defineConfig } from "tsup";
 
 const defaultConfig = defineConfig({
-  clean: true,
-  dts: "src/index.ts",
-  format: ["esm", "cjs"],
-  entryPoints: ["src/index.ts"]
+  entry: ["./src/index.ts"],
+  target: "esnext",
+  dts: true,
+  platform: "browser",
+  format: "esm",
+  treeshake: {
+    preset: "safest"
+  }
 });
+
 export default defaultConfig;
 
 export const doubleEntryConfig = defineConfig({

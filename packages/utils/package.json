@@ -24,7 +24,7 @@
   "contributors": [],
   "sideEffects": false,
   "type": "module",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
